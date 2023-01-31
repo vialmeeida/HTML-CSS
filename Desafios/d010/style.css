@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+body{
+    background-color:#84E1AD;
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(59, 213, 127);
+    padding-top: 11px;
+    background-image: linear-gradient(rgb(59, 213, 127), rgb(3, 49, 18));
+    padding-bottom: 1px;
+}
+
+header > h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: white;
+}
+header > p{
+    display: inline;
+    color: rgba(255, 255, 255, 0.623);
+}
+
+#primeiralista{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+#primeiralista > li{
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(215, 243, 227);
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+}
+
+#imagemAndroid > img{
+    width: auto;
+}
+
+
+#imagemAndroid{
+    text-align: center;
+}
+
+#primeiralista > li:hover{
+    background-color: rgba(153, 226, 157, 0.589);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.verde {
+    color: #34c474;
+    font-weight: bold;
+}
+
+#video{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #1c683e;
+    text-align: center;
+    padding: 10px;
+}
+
+.margem{
+    margin: 0 10px;
+}
+
+main{
+    font-family: android;
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 5px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+main h1{
+    color: #226240;
+}
+
+main h2{ 
+    color: #226240;
+    background-color: #84e1ac6c;
+    background-image: linear-gradient(to right,  #84e1ac6c, white);
+}
+
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* frame{
+    background-color: #1A5C38;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 183px;
+    border: 5px;
+} */
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C5EBD6;
+    border: 10px;
+    border-radius: 8px;
+    box-shadow: black;
+    margin-bottom: 10px;
+}
+
+#conteudosection{
+    padding: 0px 8px 8px 8px;
+}
+
+#conteudosection > ul{
+    color: black;
+    columns: 2;
+    text-decoration: underline;
+    list-style-type: '✔️ ';
+}
+
+section > h3{
+    background-color: #2FA866;
+    color: #e4f5eb;
+    font-size: 15px;
+    padding: 3px;
+    border: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.extra{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C5EBD6;
+    padding: 10px 10px 10px 10px;
+    border: 5px;
+}
+
+footer{
+    background-color: #1A5C38;
+    text-align: center;
+    color: #58aa7e;
+    padding: 0px 0px 1px 0px;
+}

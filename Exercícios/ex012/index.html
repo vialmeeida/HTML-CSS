@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando vídeos no meu site</title>
+</head>
+<body>
+    <h1>Estamos hospedando vídeos no meu site</h1>
+
+    <!--<video src="aqui vai o nome do vídeo" wigth="500" controls></video>-->
+
+    <!-- Mas você precisa colocar todas as versões porque os navegadores precisam abrir. Então vamos fazer uma estrutura melhor-->
+
+    <video controls width="500" poster="nome do arquivo da imagem">
+        <source src="nomedoprimeirovideo.mp4" type="video/mp4">
+        <source src="nomedosegundovideo.m4v" type="video/m4v">
+        <source src="nomedoterceirovideo.webm" type="video/webm">
+        <source src="nomedoquartovideo.0gv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video> 
+
+    <h1>Inserindo vídeos do Youtube</h1>
+
+    
+</html>
