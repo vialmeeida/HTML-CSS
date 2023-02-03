@@ -45,41 +45,40 @@ header{
 
 main{
     font-family: 'Sriracha';
-    font-size: 38px;
-    padding: 20px;
+    font-size: 34px;
+    padding: 0px;
 }
 
-#q1 {
+#primeirafoto, #segundafoto{
     height:600px;
-    background-image: url(imagens/background001.jpg);
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    margin: 100px 0px 60px 0px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.377) inset;
+}
 
+#primeirafoto {
+    background-image: url(imagens/background001.jpg);
+}
+
+#segundafoto { 
+    background-image: url(imagens/background002.jpg);
 }
 
 .transparente {
     color: white;
-    background-color: rgba(0, 0, 0, 0.342);
-    width: 500px;
+    background-color: rgba(0, 0, 0, 0.425);
     padding: 10px;
-    
-
-}
-
-#q2 {
-    
-    height:600px;
-    background-image: url(imagens/background002.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0 20px;
 }
 
 .normal{
     padding: 40px 0px 20px 10px;
+    margin: 10px 20px;
 }
 
 footer{
@@ -87,6 +86,6 @@ footer{
     color: white;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
     padding: 1px;
-
 }
