@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------------------------------------------
+- Extra small devices (phones, 600px and down)
+- Small devices (portrait tablets and large phones, 600px and up)
+- Medium devices (landscape tablets, 768px and up)
+- Large devices (laptops/desktops, 992px and up)
+- Extra large devices (large laptops and desktops, 1200px and up) 
+----------------------------------------------------------------- */
+
+/* 
+@media screen and (max-width:600px){
+
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+
+} 
+
+Essas aqui eu nao preciso utilizar porque eu ja fiz o meu site desenvolvido para mobile first
+
+*/
+
+@media print{
+
+    *{
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Site criado por Vitoria Almeida';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#celular {display: none;}
+    img#computador {display: none;}
+    img#impressora {display: block;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:768px) and (max-width:992px){ /*TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#celular {display: none;}
+    img#computador {display: none;}
+    img#impressora {display: none;}
+    img#tablet {display: block;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){ /*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#celular {display: none;}
+    img#computador {display: block;}
+    img#impressora {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+}
+@media screen and (min-width:1200px) { /*GRANDES TELAS*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#celular {display: none;}
+    img#computador {display: none;}
+    img#impressora {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: block;}
+}
+
